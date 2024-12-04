@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>TECHNIBS</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo technibis.png" rel="icon">
+  <link href="assets/img/logo technibis.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: UpConstruction - v1.3.0
+  * Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+<style>
+  .client-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.client-logo img {
+  max-width: 100%;
+  height: 300px;
+  max-height: 300px !important; /* Adjust the height of the logos */
+  transition: transform 0.3s ease-in-out;
+}
+
+.client-logo img:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+@media (max-width: 768px) {
+  .client-logos {
+    gap: 10px; /* Reduce the gap between logos on smaller screens */
+  }
+
+  .client-logo img {
+    max-height: 50px; /* Reduce the size of the logos on mobile */
+  }
+}
+
+.constructions .card-item {
+  width: 100%; /* Reduced width */
+  margin: 10px auto; /* Reduced margin to decrease space between cards */
+  border: 1.5px solid #E6B00C;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  text-align: center; /* Center text for smaller content */
+  height: 490px;
+  justify-content: space-between;
+  
+}
+
+.constructions .card-item:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.constructions .card-bg img {
+  width: 70px; /* Set width to 70px */
+  height: 70px; /* Set height to 70px */
+  object-fit: cover; /* Ensures images maintain aspect ratio */
+  border-radius: 50%; /* Make images circular */
+  margin: 10px auto; /* Center image */
+}
+
+.constructions .card-body {
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background for text */
+}
+
+.constructions .card-title {
+  font-size: 1rem; /* Adjust font size */
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.constructions .card-body p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+.constructions .card-item:hover .card-title {
+  color: #E6B00C; /* Change title color on hover */
+}
+
+
+
+@media (max-width: 768px) {
+  .constructions .card-item {
+    width: 100%; /* Full width for smaller screens */
+    height: fit-content;
+  }
+}
+
+
+
+
+.constructions .card-item:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.constructions .card-bg img {
+  width: 70px; /* Set width to 70px */
+  height: 70px; /* Set height to 70px */
+  object-fit: cover; /* Ensures images maintain aspect ratio */
+  border-radius: 50%; /* Make images circular */
+  margin: 10px auto; /* Center image */
+}
+
+.constructions .card-body {
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background for text */
+}
+
+.constructions .card-title {
+  font-size: 1rem; /* Adjust font size */
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.constructions .card-body p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+.constructions .card-item:hover .card-title {
+  color: #E6B00C; /* Change title color on hover */
+}
+/* General client name styles */
+.client-name {
+  border: 2px solid transparent;
+  padding: 15px;
+  border-radius: 10px; 
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color:white; /* Light orange */
+  color: black; /* Deep orange text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer; 
+}
+
+.client-name:hover {
+  transform: scale(1.2);
+  
+}
+
+
+
+/* Unique Animations */
+.animate-rotate {
+  animation: rotateAnimation 3s infinite linear;
+}
+
+.animate-scale {
+  animation: scaleAnimation 2s infinite ease-in-out;
+}
+
+.animate-fade {
+  animation: fadeAnimation 2.5s infinite ease-in-out;
+}
+
+.animate-bounce {
+  animation: bounceAnimation 1.5s infinite ease;
+}
+
+/* Keyframes for Animations */
+@keyframes rotateAnimation {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes scaleAnimation {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+@keyframes fadeAnimation {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes bounceAnimation {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.tab-pane img {
+    height: 350px; /* Set your desired fixed height */
+    width: 100%; /* Ensure the image takes the full width of its container */
+    object-fit: cover; /* Maintain aspect ratio and fill the container */
+    border-radius: 8px; /* Optional: adds rounded corners for a polished look */
+  }
+
+  .carousel-item img {
+    height: 250px; /* Set your desired fixed height */
+    width: 100%; /* Ensure the image spans the full width of the container */
+    object-fit: cover; /* Maintain the aspect ratio and fill the container */
+    border-radius: 8px; /* Optional: adds rounded corners for a polished look */
+  }
+  .portfolio-content img {
+    width: 700px;
+    height: 250px;
+    object-fit: cover; /* Ensures the image maintains aspect ratio within the specified dimensions */
+  }
+  .client-logo img {
+    width: 400px !important; 
+    height: 150px !important;
+  }
+  @media (max-width: 768px) {
+    .client-logo img {
+      width: 150px; /* Smaller width for mobile */
+      height: 250px;
+    }
+  }
+  
+
+</style>
+<style>
+  .client-text {
+    font-size: 1.3rem; /* Larger text for emphasis */
+    font-weight: bold;
+    font-style: italic;
+    color: #000; /* Black for a strong base */
+    position: relative;
+    display: inline-block;
+    margin: 0;
+
+    /* 3D Layered Effect */
+    text-shadow: 
+      2px 2px 0px #6e6e6e, /* Darker bottom layer for depth */
+      4px 4px 0px #a9a9a9, /* Lighter mid-layer for gradient effect */
+      6px 6px 5px rgba(0, 0, 0, 0.2); /* Soft shadow for dimension */
+  }
+
+  /* Hover Effect */
+  .client-text:hover {
+    color: #E6B00C; /* Orange for highlight */
+    text-shadow: 
+      2px 2px 2px  white, /* Bright golden layer on hover */
+      4px 4px 2px  wheat, 
+      6px 6px 8px  white; /* Glow effect */
+    transform: scale(1.1); /* Slight zoom-in */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .client-text {
+      font-size: 1.5rem; /* Adjust size for mobile screens */
+    }
+  }
+  .logo-image {
+    width: 170px; /* Adjust width as needed */
+    height: 350px; /* Maintain aspect ratio */
+}
+@media (max-width: 768px) {
+    .logo-image {
+        width: 200px; /* Adjust for tablets */
+        height: 150px;
+    }
+}
+
+ 
+</style>
+
+
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center sticky-navbar fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+            <!-- Logo Image -->
+            <img class="logo-image" src="assets/img/logo name.png" alt="Logo">
+        </a>
+  
+        <!-- Mobile Navigation Toggle -->
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+        
+        <!-- Navigation -->
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+  
+  <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero">
+
+    <div class="info d-flex align-items-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h3 data-aos="fade-down" style="color: aliceblue;">Welcome to <span>TECHNIBS</span></h2>
+            <p data-aos="fade-up"> "Building the Future, One Vision at a Time – Technibs Engineering: Where Innovation Meets Excellence in Every Structure."
+            </p>
+            <a data-aos="fade-up" data-aos-delay="200" href="#get-started" class="btn-get-started">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+      <div class="carousel-item active" style="background-image: url(assets/img/H1.jpg)">
+      </div>
+      <div class="carousel-item" style="background-image: url(assets/img/home1.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(assets/img/home7.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-4.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-5.jpg)"></div>
+
+      <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= Get Started Section ======= -->
+    <section id="get-started" class="get-started section-bg">
+      <div class="container">
+
+        <div class="row justify-content-between gy-4">
+
+          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
+            <div class="content">
+              <h3 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Building the Future, One Project at a Time</h3>
+              <p>At Technibs Engineering, we specialize in creating sustainable and innovative construction solutions. From large-scale industrial buildings to custom-designed pre-engineered structures, our expertise is rooted in delivering quality craftsmanship that exceeds expectations.</p>
+              <p>With a team of skilled professionals and a commitment to excellence, we manage every aspect of your project, ensuring timely delivery and cost-effective solutions. Whether it’s a commercial or residential project, we’re dedicated to transforming your vision into reality.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-5" data-aos="fade">
+            <form action="forms/quote.php" method="post" class="php-email-form">
+              <h3>Get a quote</h3>
+              <p>Looking for a construction partner that brings innovation and precision to every project? Reach out to us for a detailed quote and let us help you build the future.</p>
+              <div class="row gy-3">
+
+                <div class="col-md-12">
+                  <input type="text" name="name" class="form-control" placeholder="Name" required>
+                </div>
+
+                <div class="col-md-12 ">
+                  <input type="email" class="form-control" name="email" placeholder="Email" required>
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="phone" placeholder="Phone" required>
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your quote request has been sent successfully. Thank you!</div>
+
+                  <button type="submit">Get a quote</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Quote Form -->
+
+        </div>
+
+      </div>
+    </section><!-- End Get Started Section -->
+
+   <!-- ======= Constructions Section ======= -->
+<!-- ======= Constructions Section ======= -->
+<section id="constructions" class="constructions">
+  <div class="container" data-aos="fade-up">
+    <div class="section-header">
+      <h2>Our Expertise in Action</h2>
+      <p>Our project portfolio at Technibs Engineering is a powerful testament to the caliber of our work and our dedication to client satisfaction. We have successfully completed numerous projects tailored to our clients' exact specifications, across industries including pre-engineered and industrial buildings.</p>
+    </div>
+
+    <div class="row gy-4">
+
+      <!-- Industrial Buildings Card with Carousel -->
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card-item">
+          <div id="carouselIndustrial" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/img/img18.jpg" class="d-block w-100" alt="Industrial Building 1">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/img19.jpg" class="d-block w-100" alt="Industrial Building 2">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/img20.avif" class="d-block w-100" alt="Industrial Building 2">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndustrial" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselIndustrial" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Industrial Buildings</h4>
+            <p>Custom-designed facilities that support production, storage, and other industrial needs with maximum efficiency and flexibility. These projects highlight our ability to deliver robust, functional, and scalable solutions.</p>
+          </div>
+        </div>
+      </div><!-- End Card Item -->
+
+      <!-- Multiplex and Commercial Buildings Card with Carousel -->
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card-item">
+          <div id="carouselCommercial" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/img/img21.jpg" class="d-block w-100" alt="Commercial Building 1">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/img22.jpg" class="d-block w-100" alt="Commercial Building 2">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/img23.jpeg" class="d-block w-100" alt="Commercial Building 2">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCommercial" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselCommercial" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Multiplex and Commercial Buildings</h4>
+            <p>High-quality, functional spaces designed to meet the diverse needs of the entertainment and retail industries. We create spaces that are aesthetically pleasing and serve both business and consumer requirements efficiently.</p>
+          </div>
+        </div>
+      </div><!-- End Card Item -->
+
+      <!-- Petrol Pump Buildings Card with Carousel -->
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="card-item">
+          <div id="carouselPetrolPump" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/img/img24.jpg" class="d-block w-100" alt="Petrol Pump Building 1">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/img25.webp" class="d-block w-100" alt="Petrol Pump Building 2">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/img26.png" class="d-block w-100" alt="Petrol Pump Building 2">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPetrolPump" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPetrolPump" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Petrol Pump Buildings</h4>
+            <p>Safe, long-lasting, and efficient structures designed to withstand the demands of high-traffic locations. Our projects in this category emphasize durability and safety without compromising on design.</p>
+          </div>
+        </div>
+      </div><!-- End Card Item -->
+
+      
+
+    </div>
+  </div>
+</section><!-- End Constructions Section -->
+
+<!-- End Constructions Section -->
+
+    
+
+    <!-- ======= Services Section ======= -->
+ <section id="services" class="services section-bg" style="padding-top:25px;">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header mt-5">
+          <h2>Our Esteemed Clients</h2>
+          <p>We have had the privilege to work with some of the leading companies in the industry. Here are a few of them:</p>
+        </div>
+    
+        <div class="row gy-4 text-center">
+          <!-- Client 1 -->
+          <div class="col-lg-3 col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+            
+            <h4 class="client-text">McDonald's</h4>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+            <h4 class="client-text">Palal Corporations</h4>
+          </div>
+          <!-- Client 2 -->
+          <div class="col-lg-3 col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+            <h4 class="client-text">KVN Impex Pvt.Ltd.</h4>
+          </div>
+    
+          <!-- Client 3 -->
+          <div class="col-lg-3 col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+            <h4 class="client-text">Travancore Builders</h4>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+            <h4 class="client-text">D.Sundarababu (Retd.K.P.W.D.E Engineer)</h4>
+          </div>
+    
+          <!-- Client 4 -->
+          <div class="col-lg-3 col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="400">
+            <h4 class="client-text">WinTech Global Services</h4>
+          </div>
+    
+          <!-- Client 5 -->
+          <div class="col-lg-3 col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="500">
+            <h4 class="client-text">Laxman Msands</h4>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="500">
+            <h4 class="client-text">Bhima Jewellers</h4>
+          </div>
+    
+          <!-- Client 6 -->
+          <div class="col-lg-3 col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="600">
+            <h4 class="client-text">Prime Group</h4>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="500">
+            <h4 class="client-text">Abilash Group</h4>
+          </div>
+
+    
+          <!-- Client 7 -->
+          <div class="col-lg-3 col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="700">
+            <h4 class="client-text">N.K Group</h4>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="700">
+            <h4 class="client-text">Pradip Pollyfills,Gujarat</h4>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="700">
+            <h4 class="client-text">Western India Ghee Company Gujarat</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- End Services Section -->
+    
+
+    <!-- ======= Alt Services Section ======= -->
+    <section id="alt-services" class="alt-services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row justify-content-around gy-4">
+          <div class="col-lg-6 img-bg" style="background-image: url(assets/img/img10.jpg);" data-aos="zoom-in"
+            data-aos-delay="100"></div>
+
+          <div class="col-lg-5 d-flex flex-column justify-content-center">
+            <h3 style="font-style: italic;">A Legacy of Success</h3>
+            <p style="font-style: italic;">Since its founding in 2010, Technibs Engineering has revolutionized the sector. Our company has expanded rapidly under the direction of our visionary founder, Mr. Jaykrishnan, and we have developed a clientele that is evidence of our success.
+              Our customers consistently come back to us for our creative ideas and dedication to quality because they trust us and our unwavering pursuit of perfection.</p>
+              <h5 style="font-style: oblique; font-weight: bold;">Why Choose Us? </h5>
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
+              <i class="bi bi-easel flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">Industry Leadership</a></h4>
+                <p>Over a decade of expertise in Pre-Engineered and Industrial Buildings.</p>
+              </div>
+            </div><!-- End Icon Box -->
+            
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-patch-check flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">Client-Centric</a></h4>
+                <p>Client-Centric: Our strategy is based on our clients needs, creating enduring relationships and impressions.
+                </p>
+              </div>
+            </div><!-- End Icon Box -->
+            
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-brightness-high flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">Innovation at the Core</a></h4>
+                <p>Client-Centric: Our strategy is based on our clients' needs, creating enduring relationships and impressions.</p>
+              </div>
+            </div><!-- End Icon Box -->
+            
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-clock-history flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">On-time Project Delivery</a></h4>
+                <p>We promise to always finish projects on time.</p>
+              </div>
+            </div><!-- End Icon Box -->
+            
+            <!-- End Icon Box -->
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Alt Services Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features section-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2 style="font-style: italic;">Our Services</h2>
+        </div>
+        <ul class="nav nav-tabs row g-2 d-flex">
+          <li class="nav-item col-3">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
+              <h4>Pre-Engineered Buildings</h4>
+            </a>
+          </li><!-- End tab nav item -->
+    
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
+              <h4>Industrial Buildings</h4>
+            </a><!-- End tab nav item -->
+          </li>
+    
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
+              <h4>Custom Building Solutions</h4>
+            </a>
+          </li><!-- End tab nav item -->
+    
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
+              <h4>Sustainable Building Designs</h4>
+            </a>
+          </li><!-- End tab nav item -->
+    
+        </ul>
+    
+        <div class="tab-content">
+    
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                <h3>Fast, Efficient, and Cost-Effective</h3>
+                <p class="fst-italic">
+                  Pre-engineered buildings (PEBs) are designed to be strong, adaptable, and built with high efficiency. These structures are ideal for clients looking for cost-effective, quick-to-assemble solutions for various commercial or industrial applications.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> Custom designs for specific needs</li>
+                  <li><i class="bi bi-check2-all"></i> Faster construction timelines</li>
+                  <li><i class="bi bi-check2-all"></i> Reduced labor and material costs</li>
+                  <li><i class="bi bi-check2-all"></i> Durable, sustainable building materials</li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/img/img14.jpg" alt="Pre-Engineered Buildings" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+    
+          <div class="tab-pane" id="tab-2">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>Built for Industry Needs</h3>
+                <p class="fst-italic">
+                  Industrial buildings require robust and highly functional designs to accommodate heavy machinery, equipment, and large-scale operations. We specialize in creating spaces that offer versatility, strength, and cost-effectiveness to meet industry demands.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> Wide range of industrial applications</li>
+                  <li><i class="bi bi-check2-all"></i> Long-lasting construction materials</li>
+                  <li><i class="bi bi-check2-all"></i> Ability to withstand heavy loads and operations</li>
+                  <li><i class="bi bi-check2-all"></i> Efficient layout designs for operations</li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/img17.jpeg" alt="Industrial Buildings" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+    
+          <div class="tab-pane" id="tab-3">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>Tailored Solutions for Every Project</h3>
+                <p class="fst-italic">
+                  Our custom building solutions are designed to meet the specific needs of your project, whether it’s residential, commercial, or mixed-use. We work closely with you to deliver highly functional, aesthetic, and sustainable spaces.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> Custom layouts and designs</li>
+                  <li><i class="bi bi-check2-all"></i> High attention to detail for your vision</li>
+                  <li><i class="bi bi-check2-all"></i> Collaboration with architects and designers</li>
+                  <li><i class="bi bi-check2-all"></i> Focus on quality, comfort, and sustainability</li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/img15.jpeg" alt="Custom Building Solutions" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+    
+          <div class="tab-pane" id="tab-4">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>Eco-friendly, Green Building Solutions</h3>
+                <p class="fst-italic">
+                  Sustainable building designs are at the core of our mission. We focus on creating energy-efficient structures that minimize environmental impact, maximize resource efficiency, and contribute to a greener future for generations to come.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> Energy-efficient building designs</li>
+                  <li><i class="bi bi-check2-all"></i> Use of renewable and recyclable materials</li>
+                  <li><i class="bi bi-check2-all"></i> Reduced carbon footprint through smart technologies</li>
+                  <li><i class="bi bi-check2-all"></i> Water and energy conservation strategies</li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/img16.jpeg" alt="Sustainable Building Designs" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+    
+        </div>
+      </div>
+    </section>
+    
+    <!-- End Features Section -->
+
+    <!-- ======= Our Projects Section ======= -->
+    <section id="projects" class="projects">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Our Projects</h2>
+          <p>Each project we undertake reflects our commitment to quality, timely delivery, and innovative solutions tailored to our client's goals, budget, and vision.<br>
+           </p>
+        </div>
+
+        <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry"
+          data-portfolio-sort="original-order">
+
+          <ul class="portfolio-flters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-remodeling">Petrol Pump</li>
+            <li data-filter=".filter-construction">Multiplex & Commercial</li>
+            <li data-filter=".filter-repairs">Industrial Buildings </li>
+            
+          </ul><!-- End Projects Filters -->
+
+          <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/project1.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Modern Fuel Station</h4>
+                  <p>Location: Springfield City</p>
+                  
+                  <a href="assets/img/project1.jpeg"
+                    data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i
+                      class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="project-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/project3.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Multiplex Construction</h4>
+                  <p>Location: Downtown Metropolis</p>
+
+                  <a href="assets/img/project2.jpe"
+                    data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i
+                      class="bi bi-zoom-in"></i></a>
+                  
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-repairs">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/project11.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Industrial Building Repairs</h4>
+                  <p>Location: Riverbank Industrial Park</p>
+
+                  <a href="assets/img/project11.jpg" data-gallery="portfolio-gallery-repairs"
+                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/project16.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Fuel Station</h4>
+                  <p>Location: Springfield City</p>
+                  
+                  <a href="assets/img/project16.jpg"
+                    data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i
+                      class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="project-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Projects Item --> 
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/project7.webp" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Heritage Petrol Station Renovation</h4>
+                  <p>Location: Oldtown Road</p>
+                  
+                  <a href="assets/img/project7.webp" 
+                    data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i
+                      class="bi bi-zoom-in"></i></a>
+                  
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/project10.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>High-rise Commercial Complex</h4>
+                  <p>Location: City Center</p>
+                  
+                  <a href="assets/img/project10.jpeg" 
+                    data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i
+                      class="bi bi-zoom-in"></i></a>
+                  
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/project17.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Petrol Station Renovation</h4>
+                  <p>Location: Oldtown Road</p>
+                  
+                  <a href="assets/img/project17.jpg" 
+                    data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i
+                      class="bi bi-zoom-in"></i></a>
+                  
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-repairs">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/project12.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Industrial Building Restoration</h4>
+                  <p>Location: Eastside Industrial Zone</p>
+
+                  <a href="assets/img/project12.jpeg"  data-gallery="portfolio-gallery-repairs"
+                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                 
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/project22.webp" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Shopping Mall</h4>
+                  <p>Location: City Center</p>
+                  
+                  <a href="assets/img/project22.webp" 
+                    data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i
+                      class="bi bi-zoom-in"></i></a>
+                  
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-repairs">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/project23.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Industrial Building </h4>
+                  <p>Location: Riverbank Industrial Park</p>
+
+                  <a href="assets/img/project11.jpg" data-gallery="portfolio-gallery-repairs"
+                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+            
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/project2.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Energy-efficient Fuel Station</h4>
+                  <p>Location: Lakeside Boulevard</p>
+                <a href="assets/img/project2.jpeg" 
+                    data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i
+                      class="bi bi-zoom-in"></i></a>
+                  
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-repairs">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/project13.webp" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Industrial Building Repairs</h4>
+                  <p>Location: Riverbank Industrial Park</p>
+
+                  <a href="assets/img/project13.webp" data-gallery="portfolio-gallery-repairs"
+                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/project21.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4> Mall Construction</h4>
+                  <p>Location: Midtown Plaza</p>
+                  
+                  <a href="assets/img/project21.jpg"
+                    data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i
+                      class="bi bi-zoom-in"></i></a>
+                  
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/project19.webp" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Fuel Station</h4>
+                  <p>Location: Lakeside Boulevard</p>
+                <a href="assets/img/project19.webp" 
+                    data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i
+                      class="bi bi-zoom-in"></i></a>
+                  
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/project8.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Commercial Plaza Construction</h4>
+                  <p>Location: Midtown Plaza</p>
+                  
+                  <a href="assets/img/project8.jpg"
+                    data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i
+                      class="bi bi-zoom-in"></i></a>
+                  
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-repairs">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/project24.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Industrial Maintenance and Repair</h4>
+                  <p>Location: North Industrial District</p>
+                                    
+                  <a href="assets/img/project24.jpg"  data-gallery="portfolio-gallery-repairs"
+                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/project20.webp" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Multiplex Construction</h4>
+                  <p>Location: Downtown Metropolis</p>
+
+                  <a href="assets/img/project20.webp"
+                    data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i
+                      class="bi bi-zoom-in"></i></a>
+                  
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-repairs">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/project25.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Industrial Maintenance</h4>
+                  <p>Location: North Industrial District</p>
+                                    
+                  <a href="assets/img/project25.jpg"  data-gallery="portfolio-gallery-repairs"
+                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  
+                </div>
+              </div>
+            </div><!-- End Projects Item --> 
+
+          </div><!-- End Projects Container -->
+
+        </div>
+
+      </div>
+    </section>
+    
+    
+    
+    <!-- End Our Projects Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container" data-aos="fade-up">
+    
+        <div class="section-header">
+          <h2>What Our Clients Say</h2>
+          <p>We take pride in delivering high-quality construction services that exceed expectations. Here's what some of our satisfied clients have to say about Technibs.</p>
+        </div>
+    
+        <div class="slides-2 swiper">
+          <div class="swiper-wrapper">
+    
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                  <h3>James Anderson</h3>
+                  <h4>CEO, Anderson Realty</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    "The team at Technibs provided excellent service throughout our entire commercial building project. Their attention to detail and commitment to deadlines made them a reliable partner. Highly recommended!"
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+    
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                  <h3>Rachel Green</h3>
+                  <h4>Project Manager, Green Enterprises</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    "Working with Technibs was a fantastic experience. Their expertise and professionalism were apparent from the start, and they delivered exceptional results on our residential development project."
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+    
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                  <h3>Michael Brown</h3>
+                  <h4>Homeowner</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    "We hired Technibs for a major renovation of our home, and the result was beyond our expectations. The crew was professional, courteous, and skilled. We couldn’t be happier with the outcome!"
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+    
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                  <h3>David Lee</h3>
+                  <h4>Founder, Lee Construction</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    "I’ve worked with a number of construction companies, but Technibs stands out for their craftsmanship and efficiency. They exceeded our expectations on multiple commercial projects. Great work!"
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+    
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                  <h3>Amy Wilson</h3>
+                  <h4>Property Developer</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    "The quality of work provided by Technibs has been exceptional. They not only delivered on time but also provided invaluable advice during the design and construction phases."
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+    
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+    
+      </div>
+    </section>
+    
+   <!-- End Testimonials Section -->
+
+    
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-content position-relative">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <img class="logo-image" src="assets/img/logo name.png" alt="Logo" style="height: 50px;">
+              <p>Company Junction, Nooranad,<br> 
+                pallikkal (po), Adoor.
+               <br><br>
+                <strong>Phone:</strong> 9567022418<br>
+                <strong>Email:</strong> info@technibs.co.in<br>
+              </p>
+              <div class="social-links d-flex mt-3">
+                <a href="https://wa.me/9567022418" class="d-flex align-items-center justify-content-center" target="_blank">
+                  <i class="bi bi-whatsapp"></i>
+              </a>
+              <a href="https://www.facebook.com/share/wkVJ1WCkEhMC1NDW/?mibextid=LQQJ4d" class="d-flex align-items-center justify-content-center" target="_blank">
+                  <i class="bi bi-facebook"></i>
+              </a>
+              <a href="https://instagram.com/yourprofile" class="d-flex align-items-center justify-content-center" target="_blank">
+                  <i class="bi bi-instagram"></i>
+              </a>
+              <a href="https://linkedin.com/in/yourprofile" class="d-flex align-items-center justify-content-center" target="_blank">
+                  <i class="bi bi-linkedin"></i>
+              </a>
+              
+              </div>
+            </div>
+          </div><!-- End footer info column-->
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div><!-- End footer links column-->
+
+          <div class="col-lg-3 col-md-3 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="services.html">Pre-Engineered Buildings</a></li>
+              <li><a href="services.html">Industrial Buildings</a></li>
+              <li><a href="services.html">Z-Section Material Specifications</a></li>
+              <li><a href="services.html">End-to-End Project Oversight</a></li>
+              <li><a href="services.html">Premium Materials and Techniques</a></li>
+            </ul>
+          </div><!-- End footer links column-->
+
+          <div class="col-lg-3 col-md-3 footer-links">
+            <h4>Our Projects</h4>
+            <ul>
+              <li><a href="projects.html">Petrol Pump Building</a></li>
+              <li><a href="projects.html">Multiplex & Commercial Building</a></li>
+              <li><a href="projects.html">Industrial Buildings </a></li>
+            </ul>
+          </div><!-- End footer links column-->
+
+          
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-legal text-center position-relative">
+      <div class="container">
+        <div class="copyright">
+          <!-- &copy; Copyright <strong><span>UpConstruction</span></strong>. -->
+        </div>
+        <div class="credits"> 
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/ -->
+          Designed by <a>Cognetz</a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
