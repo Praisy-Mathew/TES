@@ -43,6 +43,12 @@
     height: 250px;
     object-fit: cover; /* Ensures the image maintains aspect ratio within the specified dimensions */
   }
+  @media (max-width: 468px) {
+    .portfolio-content img {
+        width: 100%; /* Adapts to the width of the container or screen */
+        height: auto; /* Keeps aspect ratio */
+    }
+}
   .logo-image {
     width: 170px; /* Adjust width as needed */
     height: 350px; /* Maintain aspect ratio */
@@ -121,7 +127,7 @@
             
           </ul><!-- End Projects Filters -->
 
-          <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+          <!-- <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200"> -->
 
             <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
